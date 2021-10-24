@@ -5,9 +5,9 @@
 ```
 Instal node version 12.16.1 https://nodejs.org/download/release/v12.16.1/node-v12.16.1-x64.msi
 
-npm install vue@next
-
 npm install -g @vue/cli
+
+npm install
 
 ```
 

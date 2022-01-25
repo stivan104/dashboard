@@ -1,5 +1,7 @@
 <template>
-  <div>Pair container for {{ pair.codeFrom }}-{{ pair.codeTo }}</div>
+  <div class="pair">
+    Pair container for {{ pair.codeFrom }}-{{ pair.codeTo }}
+  </div>
 </template>
 
 <script>
@@ -9,4 +11,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.pair {
+  border: 2px solid black;
+}
+</style>

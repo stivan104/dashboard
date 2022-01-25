@@ -8,14 +8,17 @@
 
 <script>
 import RatePanel from "./components/RatePanel";
+import { usePairsStore } from "@/store/pairsStore";
 
 export default {
-  name: "App",
-  components: { RatePanel },
-  computed: {
-    ratePairs() {
-      return this.$store.state.ratePairs;
-    },
+  data: () => {
+    const pairsStore = usePairsStore();
+    return {
+      ratePairs: pairsStore.ratePairs,
+    };
+  },
+  components: {
+    RatePanel: RatePanel,
   },
 };
 </script>

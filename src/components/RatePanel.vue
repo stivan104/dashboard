@@ -1,6 +1,7 @@
 <template>
   <div class="pair">
-    Pair container for {{ pair.codeFrom }}-{{ pair.codeTo }}
+    Pair container for {{ pair.uid }}:
+    <b>{{ pair.rate }}</b>
   </div>
 </template>
 
@@ -13,6 +14,8 @@ export default {
 
 <style scoped>
 .pair {
+  padding: 10px;
+  margin: 10px;
   border: 2px solid black;
 }
 </style>
